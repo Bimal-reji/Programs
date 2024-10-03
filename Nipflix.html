@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nippoflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1> NIPFLIX</h1>
+        <style> nav h1{
+            text-align: right;
+        color: rgb(234, 13, 64);
+        font-size:200%
+    ; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+    nav ul {padding: 0px;}
+    nav ul li {
+  display: inline-table;
+  margin-right: 20px;}
+  </style>
+        <ul>
+            <li><a href="https://r.search.yahoo.com/_ylt=AwrOrKIXRv1m.CkD64RXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1729084184/RO=10/RU=https%3a%2f%2fwww.netflix.com%2f/RK=2/RS=plJ1vMGOeHuFn2dp8_Z_5R3W7K0-">Home</a></li>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="anime.html">Anime</a></li>
+        </ul>
+    </nav>
+
+    <header id="product-card">
+            <h2>Watch Movies,TV Shows & Anime</h2>       
+        <div class="">
+            <p>Anytime. Anywhere.</p>
+            <button id="watchNow">Watch Now</button>
+        </div>
+    </header>
+
+    <section id="popular">
+        <h2>Popular on Nipflix</h2>
+        <div class="movie-list">
+            <div class="movie" onclick="alert('Movie 1 Clicked!')">
+                <img src="image/6408f6e7b5811271dc883aa8_batman-min.png" width="10px" alt="Movie 1">
+                <p>The Batman</p>
+            </div>
+            <div class="movie" onclick="alert('Movie 2 Clicked!')">
+                <img src="image/uV65yaFkw6B4KHXAsBYui0KvJq.jpg" width="10px" alt="Movie 1">
+                <p>From</p>
+            </div>
+            <div class="movie" onclick="alert('Movie 3 Clicked!')">
+                <img src="image/fFgRMzm2LPPac36qmVi5EBmW9i6.jpg" width="10px" alt="Movie 3">
+                <p>Jujutsu Kaisen</p>
+            </div>
+            <div class="movie" onclick="alert('Movie 4 Clicked!')">
+                <img src="image/ykCiHMRzTL0MsWGB3nsXdpsYDES.jpg" width="10px" alt="Movie 4">
+                <p>Bleach</p>
+            </div>
+            <div class="movie" onclick="alert('Movie 5 Clicked!')">
+                <img src="image/3xnWaLQjelJDDF7LT1WBo6f4BRe.jpg" width="10px"  alt="Movie 5">
+                <p>Breaking Bad</p>
+            </div>
+        </div>
+    </section>
+    <style> 
+    
+    .product-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+    </style>
+</body>
+</html>
+<script>document.getElementById('watchNow').addEventListener('click', function() {
+    alert('Let\'s watch something!');
+});
+</script>
